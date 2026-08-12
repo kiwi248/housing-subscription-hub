@@ -1,0 +1,14 @@
+from typing import Any
+
+from pydantic import BaseModel
+
+
+class ApiResponse(BaseModel):
+    """모든 API가 공통으로 사용하는 응답 모델입니다."""
+
+    # success는 요청 처리 성공 여부를 나타냅니다.
+    success: bool
+    # message는 프론트엔드가 그대로 표시할 수 있는 짧은 설명입니다.
+    message: str
+    # data는 실제 데이터입니다. 목록, 객체, None 등 여러 모양이 올 수 있어 Any를 사용합니다.
+    data: Any | None = None

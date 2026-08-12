@@ -1,0 +1,19 @@
+.venv/
+.venv_broken*/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# VS Code 개인 설정
+.vscode/*
+!.vscode/
+!.vscode/settings.json
+CODEX_HANDOFF.md

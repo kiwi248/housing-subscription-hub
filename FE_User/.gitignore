@@ -1,0 +1,21 @@
+.venv/
+.venv_broken*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.env
+.env.*
+!.env.example
+
+.streamlit/secrets.toml
+*.log
+
+# VS Code 개인 설정
+.vscode/*
+!.vscode/
+!.vscode/settings.json
+CODEX_HANDOFF.md
+login-layout-preview.html
